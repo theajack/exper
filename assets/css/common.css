@@ -1,0 +1,114 @@
+body{
+    background-color: #fff;
+    width: 1000px;
+    color: #444;
+    margin: 10px auto;
+    font-size: 16px;
+    border: 1px solid #666;
+    position: relative;
+}
+#paper{
+    position: relative;
+    padding: 30px;
+    background-color: #fff;
+}
+#pdfButton{
+    position: absolute;
+    z-index: 100;
+    right: 5px;
+    top: 5px;
+    border: 1px solid #444;
+    padding: 5px;
+    height: 32px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+table{
+    border-top:1px solid #444;
+    border-left:1px solid #444;
+    width: 100%;
+}
+td{
+    border-right:1px solid #444;
+    border-bottom:1px solid #444;
+    text-align: center;
+    padding: 5px 10px;
+}
+#title{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+}
+#head{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+}
+.q-title,.t-title{
+    text-align: left;
+    font-weight: bold;
+    margin: 20px 0;
+    position: relative;
+}
+.t-title{
+    text-align: center;
+}
+.corner-text{
+    position: absolute;
+    right: 30px;
+    top: 3px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.content{
+    padding:0 30px; 
+    position: relative;
+}
+.mr{
+    margin-right: 50px;
+}
+.line-input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #444;
+    width:80px;
+    text-align: center;
+}
+.line-input.l{
+    width:120px;
+}
+.line-input.s{
+    width:40px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-normal{
+    font-weight:normal;
+}
+.frac-w{
+    display: inline-block;
+    position: relative;
+    width: 30px;
+}
+.frac-w.spec{
+    top: -4px;
+    left: -8px;
+}
+.frac-s{
+    position: absolute;
+    border-bottom: 2px solid #444;
+    top: -28px;
+}
+.frac-m{
+    position: absolute;
+    top: -3px;
+}
+.canvas-bg{
+    width:93%;
+    position: absolute;
+    top: 24px;
+}

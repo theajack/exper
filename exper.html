@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/draw.css">
+  <style type="text/css">
+  </style>
+</head>
+<body>
+  <!-- <div class='draw-tools'>
+    <div class='tool-item' onclick='file.click()'>o</div>
+    <div class='tool-item' onclick="restuya()">r</div>
+    <div class='tool-item' onclick="saveTu();">s</div>
+    <div class='tool-item' >
+      <input type="color" />
+    </div>
+  </div>
+  <input id="file" class='hide' type="file">
+  <canvas id="canvas" width="1000" height="500">
+    您的破浏览器不兼容，请升级！
+  </canvas>	 -->
+  <div class='bg'>aaaaaaa</div>
+<div id='aaa'>
+</div>
+<script type="text/javascript" src='assets/js/draw.js'></script>
+<script type="text/javascript">
+var draw=new Draw({
+  ele:'aaa'
+});
+draw.ctx.fillStyle='#4f4'
+draw.ctx.fillRect(0,0,400,400)
+draw.useEraser()
+	// 获取 canvas 对象
+	
+  
+            /*function SaveAs5(imgURL) 
+            { 
+              var oPop = window.open(imgURL,"","width=1, height=1, top=5000, left=5000"); 
+              for(; oPop.document.readyState != "complete"; ){ 
+                if (oPop.document.readyState == "complete")break; 
+              } 
+              oPop.document.execCommand("SaveAs"); 
+              oPop.close(); 
+            } 
+
+		        function base64Img2Blob(code){
+                var parts = code.split(';base64,');
+                var contentType = parts[0].split(':')[1];
+                var raw = window.atob(parts[1]);
+                var rawLength = raw.length;
+
+                var uInt8Array = new Uint8Array(rawLength);
+
+                for (var i = 0; i < rawLength; ++i) {
+                  uInt8Array[i] = raw.charCodeAt(i);
+                }
+
+                return new Blob([uInt8Array], {type: contentType}); 
+            }
+            function downloadFile(fileName, content){
+               
+                var aLink = document.createElement('a');
+                var blob = base64Img2Blob(content); //new Blob([content]);
+              
+                var evt = document.createEvent("HTMLEvents");
+                evt.initEvent("click", false, false);//initEvent 不加后两个参数在FF下会报错
+                aLink.download = fileName;
+                aLink.href = URL.createObjectURL(blob);
+         
+                aLink.dispatchEvent(evt);
+            }           */
+            
+</script>
+</body>
+</html>

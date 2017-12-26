@@ -1,0 +1,63 @@
+.bg{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: -1;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hide{
+  display:none!important;
+}
+
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  display: table;
+  content: " ";
+}
+.draw-wrapper{
+  position:relative;
+  width:400px;
+  height:424px;
+  /* border:1px solid #888; */
+}
+.draw-tools{
+  width:100%;
+  height:24px;
+  /* background-color: #eee; */
+}
+.tool-item{
+  float: right;
+  /* width: 20px; */
+  width:auto;
+  height: 20px;
+  line-height: 15px;
+  margin: 2px;
+  background-color: #ccc;
+  text-align: center;
+  border:1px solid #888;
+  font-size: 14px;
+  padding: 2px;
+  cursor: pointer;
+}
+.tool-item input{
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.draw-canvas{
+  cursor:url('../images/pen.png'),auto;
+}

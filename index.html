@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/theajack.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/boluni.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/draw.css">
+    </head>
+    <body>
+        <div id="pdfButton" name='bonuli'>导出为PDF</div>
+        <div id='paper'>
+            <div id="title">能量方程(伯努利方程)实验报告</div>
+            <div id="head">
+                <span>学号</span>
+                <input class='line-input l' type="text">
+                <span>姓名</span>
+                <input class='line-input l' type="text">
+                <span class="right">
+                    <span>实验日期</span>
+                    <input class='line-input m' type="number">
+                    <span>年</span>
+                    <input class='line-input s' type="number">
+                    <span>月</span>
+                    <input class='line-input s' type="number">
+                    <span>日</span>
+                </span>
+            </div>
+            <div id="body">
+                <div class="q-title">1、记录有关常数：</div>
+                <div class='content'>                              
+                    <div>
+                        <span class="mr">
+                            均匀段 <i>D</i><sub>1</sub> = <input class='line-input m' type="number"> 10<sup>-2</sup>m
+                        </span>
+                        <span>
+                            缩管段 <i>D</i><sub>2</sub> = <input class='line-input m' type="number"> 10<sup>-2</sup>m
+                        </span>
+                    </div>
+                    <div>
+                        <span class="mr">
+                            扩管段 <i>D</i><sub>3</sub> = <input class='line-input m' type="number"> 10<sup>-2</sup>m
+                        </span>
+                        <span>
+                            上管道轴线高程 &#8711;<sub>0</sub> = <input class='line-input m' type="number"> 10<sup>-2</sup>m
+                        </span>
+                    </div>
+                </div>
+                <div class="q-title">2、实验数据记录及计算结果</div>
+                <div class="t-title">表1、管径记录表（单位：10<sup>-2</sup>m）</div>
+                <div class="content">
+                    <table cellspacing=0 cellpadding=0>
+                        <tr>
+                            <td>测点编号</td>
+                            <td>1*</td>
+                            <td>2<br>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6*<br>7</td>
+                            <td>8*<br>9</td>
+                            <td>10<br>11</td>
+                            <td>12*<br>13</td>
+                            <td>14*<br>15</td>
+                            <td>16*<br>17</td>
+                            <td>18*<br>19</td>
+                        </tr>
+                        <tr>
+                            <td>管径</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>间距</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="t-title">
+                    表2、测记（Z +<span class="frac-w"><span class="frac-s">P</span><span class="frac-m">&#978;</span></span> ） 数值表（单位：10<sup>-2</sup>m）
+                    <span class="corner-text">(基准面选在标尺的零点上)</span>
+                </div>
+                <div class="content">
+                    <table cellspacing=0 cellpadding=0>
+                        <tr>
+                            <td colspan="2">测点编号</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>13</td>
+                            <td>15</td>
+                            <td>17</td>
+                            <td>19</td>
+                            <td>Q(10<sup>-6</sup>m<sup>3</sup>/s)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                实<br>验<br>次<br>数
+                            </td>
+                            <td>1</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="t-title">
+                    表3、流速水头<span class="frac-w"><span class="frac-s">v<sup>2</sup></span><span class="frac-m">2g</span></span> （单位：10<sup>-2</sup>m）
+                </div>
+                <div class="content">
+                    <table cellspacing=0 cellpadding=0>
+                        <tr>
+                            <td>管径<br>10<sup>-2</sup>m</td>
+                            <td><i>A</i><br><br>10<sup>-4</sup>m<sup>2</sup></td>
+                            <td>v<br>10<sup>-2</sup>m/s</td>
+                            <td><span class="frac-w"><span class="frac-s">v<sup>2</sup></span><span class="frac-m">2g</span></span> 10<sup>-2</sup>m</td>
+                            <td><i>A</i><br><br>10<sup>-4</sup>m<sup>2</sup></td>
+                            <td>v<br>10<sup>-2</sup>m/s</td>
+                            <td><span class="frac-w"><span class="frac-s">v<sup>2</sup></span><span class="frac-m">2g</span></span> 10<sup>-2</sup>m</td>
+                            <td><i>A</i><br><br>10<sup>-4</sup>m<sup>2</sup></td>
+                            <td>v<br>10<sup>-2</sup>m/s</td>
+                            <td><span class="frac-w"><span class="frac-s">v<sup>2</sup></span><span class="frac-m">2g</span></span> 10<sup>-2</sup>m</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="t-title">
+                    表4、总水头（Z +<span class="frac-w"><span class="frac-s">P</span><span class="frac-m">&#978;</span></span> + <span class="frac-w spec"><span class="frac-s">&#945;&#957;<sup>2</sup></span><span class="frac-m">2g</span> </span>  ） （单位：10<sup>-2</sup>m）
+                </div>
+                <div class="content">
+                    <table cellspacing=0 cellpadding=0>
+                        <tr>
+                            <td colspan="2">测点编号</td>
+                            <td>2<br>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>13</td>
+                            <td>15</td>
+                            <td>17</td>
+                            <td>19</td>
+                            <td>Q(10<sup>-6</sup>m<sup>3</sup>/s)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                实<br>验<br>次<br>数
+                            </td>
+                            <td>1</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q-title">3、绘制上述成果中最大流量下的总水头线和测压管水头线（可直接绘在如下轴向尺寸图上）</div>
+                <div class="content">
+                    <img src="assets/images/bonuli.png" class='canvas-bg' alt="">
+                    <div id="bonuliCanvas">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src='assets/js/jetter2.0.js'></script>
+        <script type="text/javascript" src='assets/js/draw.js'></script>
+        <script type="text/javascript" src="assets/js/jquery-git.js"></script>
+        <script type="text/javascript" src="assets/js/html2canvas.js"></script>
+        <script type="text/javascript" src="assets/js/jspdf.debug.js"></script>
+        <script type="text/javascript" src='assets/js/common.js'></script>
+        <script type="text/javascript">
+            J.cls('canvas-bg').onload=function(){
+                var ele=J.id('bonuliCanvas');
+                canvas=new Draw({
+                    ele:ele,
+                    width:this.wid(),
+                    height:this.hei(),
+                    lineWidth:5,
+                    tools:['eraser','clear']
+                });
+            }
+        </script>
+    </body>
+</html>
