@@ -312,19 +312,25 @@
         <script type="text/javascript" src="assets/js/jspdf.debug.js"></script>
         <script type="text/javascript" src='assets/js/common.js'></script>
         <script type="text/javascript">
+            var hasInit=false;
+            J.cls('canvas-bg').onload=initCanvas;
             J.ready(function(){
-                J.cls('canvas-bg').onload=function(){
+                initCanvas();
+            });
+            function initCanvas(){
+                if(!hasInit){
+                    var img=J.cls('canvas-bg');
+                    hasInit=true;
                     var ele=J.id('bonuliCanvas');
                     canvas=new Draw({
                         ele:ele,
-                        width:this.wid(),
-                        height:this.hei(),
+                        width:img.wid(),
+                        height:img.hei(),
                         lineWidth:5,
                         tools:['eraser','clear']
                     });
                 }
-            });
-        
+            }
         </script>
     </body>
 </html>
