@@ -312,16 +312,19 @@
         <script type="text/javascript" src="assets/js/jspdf.debug.js"></script>
         <script type="text/javascript" src='assets/js/common.js'></script>
         <script type="text/javascript">
-            J.cls('canvas-bg').onload=function(){
-                var ele=J.id('bonuliCanvas');
-                canvas=new Draw({
-                    ele:ele,
-                    width:this.wid(),
-                    height:this.hei(),
-                    lineWidth:5,
-                    tools:['eraser','clear']
-                });
-            }
+            J.ready(function(){
+                J.cls('canvas-bg').onload=function(){
+                    var ele=J.id('bonuliCanvas');
+                    canvas=new Draw({
+                        ele:ele,
+                        width:this.wid(),
+                        height:this.hei(),
+                        lineWidth:5,
+                        tools:['eraser','clear']
+                    });
+                }
+            });
+        
         </script>
     </body>
 </html>
