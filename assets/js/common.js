@@ -1,3 +1,5 @@
+var beforePDF=null;
+var afterPDF=null;
 J.ready(function(){
     // J.id('pdfButton').clk(function(){
     //     var pdf = new jsPDF('p','pt','a4');
@@ -16,7 +18,7 @@ J.ready(function(){
     child[3].txt(d.getMonth()+1);
     child[5].txt(d.getDate());
     J.id('pdfButton').onclick = function() {
-        J.cls('draw-tools').addClass('hide');
+        if(beforePDF)beforePDF();
         html2canvas(J.id('paper'), {
             onrendered:function(canvas) {
 
@@ -51,9 +53,8 @@ J.ready(function(){
                         }
                     }
                 }
-
+                if(afterPDF)afterPDF();
                 pdf.save(J.id('pdfButton').attr('name')+'.pdf');
-                J.cls('draw-tools').removeClass('hide');
             }
         });
     }

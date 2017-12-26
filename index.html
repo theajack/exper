@@ -297,7 +297,7 @@
                     </table>
                 </div>
                 <div class="q-title">3、绘制上述成果中最大流量下的总水头线和测压管水头线（可直接绘在如下轴向尺寸图上）</div>
-                <div class="content">
+                <div class="content" id='canvas'>
                     <img src="assets/images/bonuli.png" class='canvas-bg' alt="">
                     <div id="bonuliCanvas">
     
@@ -313,6 +313,14 @@
         <script type="text/javascript" src="assets/js/jspdf.debug.js"></script>
         <script type="text/javascript" src='assets/js/common.js'></script>
         <script type="text/javascript">
+            beforePDF=function(){
+                J.cls('draw-tools').addClass('hide');
+                J.id('canvas').css('margin-top','300px');
+            }
+            afterPDF=function(){
+                J.cls('draw-tools').removeClass('hide');
+                J.id('canvas').css('margin-top','0px');
+            }
             var hasInit=false;
             J.cls('canvas-bg').onload=initCanvas;
             J.ready(function(){
