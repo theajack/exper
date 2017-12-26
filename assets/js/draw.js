@@ -12,11 +12,11 @@ var Draw=function(opt){
   _initDrawEle.call(this,opt);
 };Draw.prototype.usePen=function(){
   this.mode='pen';
-  this.ele._canvas.css('cursor',"url('images/pen.png'),auto");
+  this.ele._canvas.css('cursor',"url('assets/images/pen.png'),auto");
   this.ele._tools._eraser.innerText='橡皮';
 };Draw.prototype.useEraser=function(){
   this.mode='eraser';
-  this.ele._canvas.css('cursor',"url('images/eraser.png'),auto");
+  this.ele._canvas.css('cursor',"url('assets/images/eraser.png'),auto");
   this.ele._tools._eraser.innerText='画笔';
 };Draw.prototype.open=function(){
   this.ele._file.click();
