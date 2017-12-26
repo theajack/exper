@@ -10,7 +10,11 @@ J.ready(function(){
     //     });
     // });
 
-
+    var child=J.id('date').child();
+    var d=new Date();
+    child[1].val(d.getFullYear());
+    child[3].val(d.getMonth()+1);
+    child[5].val(d.getDate());
     J.id('pdfButton').onclick = function() {
         html2canvas(J.id('paper'), {
             onrendered:function(canvas) {
