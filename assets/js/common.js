@@ -12,10 +12,11 @@ J.ready(function(){
 
     var child=J.id('date').child();
     var d=new Date();
-    child[1].val(d.getFullYear());
-    child[3].val(d.getMonth()+1);
-    child[5].val(d.getDate());
+    child[1].txt(d.getFullYear());
+    child[3].txt(d.getMonth()+1);
+    child[5].txt(d.getDate());
     J.id('pdfButton').onclick = function() {
+        J.cls('draw-tools').addClass('hide');
         html2canvas(J.id('paper'), {
             onrendered:function(canvas) {
 
@@ -52,6 +53,7 @@ J.ready(function(){
                 }
 
                 pdf.save(J.id('pdfButton').attr('name')+'.pdf');
+                J.cls('draw-tools').removeClass('hide');
             }
         });
     }
