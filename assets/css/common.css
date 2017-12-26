@@ -4,24 +4,27 @@ body{
     color: #444;
     margin: 10px auto;
     font-size: 16px;
-    border: 1px solid #666;
     position: relative;
 }
 #paper{
     position: relative;
     padding: 30px;
     background-color: #fff;
+    border: 1px solid #666;
 }
 #pdfButton{
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    right: 5px;
-    top: 5px;
+    right: 10px;
+    top: 10px;
     border: 1px solid #444;
     padding: 5px;
     height: 32px;
     background-color: #ddd;
     cursor: pointer;
+}
+#pdfButton:hover{
+    background-color: #aaa;
 }
 table{
     border-top:1px solid #444;

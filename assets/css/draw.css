@@ -51,6 +51,9 @@
   padding: 2px;
   cursor: pointer;
 }
+.tool-item:hover{
+  background-color: #aaa;
+}
 .tool-item input{
   width: 18px;
   height: 18px;
